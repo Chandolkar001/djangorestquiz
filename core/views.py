@@ -1,4 +1,3 @@
-from tkinter.ttk import Separator
 from django.shortcuts import render, get_object_or_404
 from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 import json
