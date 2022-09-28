@@ -105,9 +105,9 @@ class ResponseSub(APIView):
                 profile.quiz_attempted += 1           
                 quiz_attended.append(quiz_id)
                 profile.quiz_titles = " ".join(map(str, quiz_attended))
-                data = {}
-                data['username'] = profile.username
-                data['score'] = profile.score 
+            data = {}
+            data['username'] = profile.username
+            data['score'] = profile.score 
 
             profile.save(update_fields = ["score", "quiz_attempted", "quiz_titles"])
 
